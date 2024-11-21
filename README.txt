@@ -1,8 +1,3 @@
-Sahar Hazan - 	213373806
-Naor Barzida - 	209162353
-Liraz Poldian - 313885188
-Assaf Mor - 	206475691
-
 Note: 
 The mounted path is /mnt/mta.
 
