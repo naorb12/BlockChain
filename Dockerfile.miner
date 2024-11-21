@@ -1,0 +1,15 @@
+# Use a base image with the required GLIBC version
+FROM ubuntu:21.10
+
+# Set the working directory
+WORKDIR /app
+
+# Copy the precompiled miner binary
+COPY miner /app/miner
+
+# Ensure the script has execute permissions
+RUN chmod +x /app/miner
+
+# Run the miner binary
+CMD ["/app/miner"]
+

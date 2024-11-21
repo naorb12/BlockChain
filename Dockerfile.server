@@ -1,0 +1,18 @@
+# Use a base image with the required GLIBC version
+FROM ubuntu:21.10
+
+# Set the working directory
+WORKDIR /app
+
+# Copy the precompiled server binary
+COPY server /app/server
+
+# Copy configuration file
+COPY mtacoin.conf /mnt/mta/
+
+# Ensure the script has execute permissions
+RUN chmod +x /app/server
+
+# Run the server binary
+CMD ["/app/server"]
+
